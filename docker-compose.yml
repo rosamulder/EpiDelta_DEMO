@@ -1,0 +1,15 @@
+version: "3.0"
+
+services:
+  shiny:
+    container_name: shinyserver
+    image: rocker/shiny
+    restart: always
+    user: 'root'
+    environment:
+      - APPLICATION_LOGS_TO_STDOUT=false
+    ports:
+      - '3401:3838'
+    volumes:
+      - './shiny_logs:/var/log/shiny-server'
+      - './apps:/srv/shiny-server'
