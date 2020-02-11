@@ -49,10 +49,10 @@ names(cpgs) <- cpgs
 ui <- tagList(               
   
   titlePanel(fluidRow(column(6, tags$h1(tags$strong(tags$code("THE EPIDELTA PROJECT")))),
-                      column(1, tags$img(src=paste0(logoloc,'Logo_EMC.png'), height = 40, width = 80, href="https://www.erasmusmc.nl/")),  
-                      column(1, tags$img(src=paste0(logoloc,'Logo_GenR.png'), height = 40, width = 40, href="https://generationr.nl/researchers/")),  
-                      column(1, tags$img(src=paste0(logoloc,'Logo_BristolUni.png'), height = 40, width = 80, href="https://www.bristol.ac.uk/")), 
-                      column(1, tags$img(src=paste0(logoloc,'Logo_ALSPAC.png'), height = 40, width = 30, href="http://www.bristol.ac.uk/alspac/"))),  
+                      column(1, tags$img(src=paste0(logoloc,'Logo_EMC.png'), height = 50, width = 110, href="https://www.erasmusmc.nl/")),  
+                      column(1, tags$img(src=paste0(logoloc,'Logo_GenR.png'), height = 50, width = 60, href="https://generationr.nl/researchers/")),  
+                      column(1, tags$img(src=paste0(logoloc,'Logo_BristolUni.png'), height = 50, width = 120, href="https://www.bristol.ac.uk/")), 
+                      column(1, tags$img(src=paste0(logoloc,'Logo_ALSPAC.png'), height = 70, width = 50, href="http://www.bristol.ac.uk/alspac/"))),  
              windowTitle="epidelta project"),
   
   
