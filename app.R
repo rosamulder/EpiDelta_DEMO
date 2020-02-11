@@ -4,7 +4,7 @@
 #################
 #################
 #Rosa Mulder
-#Oct 30 2019
+#Feb 11 2020
 
 
 ################
@@ -103,12 +103,11 @@ server <- function(input, output) {
   #long plot from results                  
   output$Predicted_data_M2_bycohort <- renderImage({
     
-    graphname_M2_bycohort <- paste0(figureloc,data_cpg(),'_M2_bycohort_191114.png')   # NOTE: pdf is much smaller, but am not able to use the pdf version
+    graphname_M2_bycohort <- paste0(figureloc,data_cpg(),'_M2_bycohort_191114.png')   
     image_M2_bycohort     <- graphname_M2_bycohort
     
     list(src = image_M2_bycohort, 
          contentType = 'image/png',
-         #contentType = 'application/pdf',                                            # doesn't work
          width = 400,
          height = 300,
          title = "Model 2 - nonlinear changes",            
